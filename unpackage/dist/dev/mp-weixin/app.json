@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/components/index/index",
+    "pages/tabBar/curriculum/curriculum",
+    "pages/tabBar/hot/hot",
+    "pages/tabBar/my/my",
+    "pages/tabBar/more/more"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "塑健-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#2c2c2c",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/curriculum/curriculum",
+        "iconPath": "static/images/home/n_curriculum.png",
+        "selectedIconPath": "static/images/home/y_curriculum.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/tabBar/hot/hot",
+        "iconPath": "static/images/home/n_hot.png",
+        "selectedIconPath": "static/images/home/y_hot.png",
+        "text": "热门"
+      },
+      {
+        "pagePath": "pages/tabBar/my/my",
+        "iconPath": "static/images/home/n_my.png",
+        "selectedIconPath": "static/images/home/y_my.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/tabBar/more/more",
+        "iconPath": "static/images/home/n_more.png",
+        "selectedIconPath": "static/images/home/y_more.png",
+        "text": "更多"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap66.json"
+}

@@ -1,0 +1,1 @@
+<view class="content _div"><view class="con-tab _ul"><block wx:for="{{curriculumList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="_li">{{item.name}}</view></block></view></view>

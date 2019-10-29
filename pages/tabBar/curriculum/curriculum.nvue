@@ -1,0 +1,59 @@
+<template>
+	<div class="content">
+		<ul class="con-tab">
+			<li v-for="(item,index) in curriculumList" :key="index">{{item.name}}</li>
+		</ul>
+	</div>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				curriculumList: [{
+						name: "推荐课程"
+					},
+					{
+						name: "健身"
+					},
+					{
+						name: "跑步"
+					},
+					{
+						name: "瑜伽"
+					},
+					{
+						name: "操课"
+					},
+					{
+						name: "行走"
+					},
+					{
+						name: "球类"
+					},
+
+				]
+			}
+		},
+		onLoad: function() {
+			console.log("页面加载的时候，执行onLoad函数,但是在tabBar里面切换页面的时候，只执行一次！")
+		},
+		onShow:()=>{
+			console.log("页面每次显示都会触发onShow函数")
+		},
+		onHide:()=>{
+			console.log("页面每次隐藏都会触发onHide函数")
+		}
+	}
+</script>
+
+<style lang="less">
+	.content {
+		.con-tab {
+			display: flex;
+			// width: 100%;
+			color: blue;
+
+		}
+	}
+</style>

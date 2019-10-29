@@ -1,0 +1,77 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/components/index/index",
+			"style": {
+				"navigationBarTitleText": "塑健"
+			}
+		},
+		{
+			"path": "pages/tabBar/curriculum/curriculum",
+			"style": {
+				"navigationBarTitleText": "课程"
+			}
+		},
+		{
+			"path": "pages/tabBar/hot/hot",
+			"style": {
+				"navigationBarTitleText": "热门"
+			}
+		},
+		{
+			"path": "pages/tabBar/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/tabBar/more/more",
+			"style": {
+				"navigationBarTitleText": "更多"
+			}
+		}
+
+	],
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#2c2c2c",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/tabBar/curriculum/curriculum",
+			"iconPath": "static/images/home/n_curriculum.png",
+			"selectedIconPath": "static/images/home/y_curriculum.png",
+			"text": "课程"
+		}, {
+			"pagePath": "pages/tabBar/hot/hot",
+			"iconPath": "static/images/home/n_hot.png",
+			"selectedIconPath": "static/images/home/y_hot.png",
+			"text": "热门"
+		}, {
+			"pagePath": "pages/tabBar/my/my",
+			"iconPath": "static/images/home/n_my.png",
+			"selectedIconPath": "static/images/home/y_my.png",
+			"text": "我的"
+		}, {
+			"pagePath": "pages/tabBar/more/more",
+			"iconPath": "static/images/home/n_more.png",
+			"selectedIconPath": "static/images/home/y_more.png",
+			"text": "更多"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "塑健-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition": { //模式配置，仅开发期间生效
+	    "current": 0, //当前激活的模式（list 的索引项）
+	    "list": [{
+	            "name": "test", //模式名称
+	            "path": "pages/tabBar/curriculum/curriculum", //启动页面，必选
+	            "query": "interval=4000&autoplay=false" //启动参数，在页面的onLoad函数里面得到。
+	        }
+	    ]
+	}
+}

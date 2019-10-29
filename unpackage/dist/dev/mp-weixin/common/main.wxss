@@ -1,0 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*浏览器初始化的默认样式*/
+/** 清除内外边距 **/
+page, ._h1, ._h2, ._h3, ._h4, ._h5, ._h6, ._hr, ._p, ._blockquote, ._dl, ._dt, ._dd, ._ul, ._ol, ._li, ._pre, form, ._fieldset, ._legend, button, input, textarea, ._th, ._td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+/** 设置默认字体 **/
+page,
+button,
+input,
+._select,
+textarea /* for ie */ {
+    font: 14px/1.5 tahoma, \5b8b\4f53, sans-serif;
+}
+._h1, ._h2, ._h3, ._h4, ._h5, ._h6 { font-size: 100%; font-weight: normal;}
+._address, ._cite, ._dfn, ._em, ._var { font-style: normal;
+}
+/* 将斜体扶正 */
+._code, ._kbd, ._pre, ._samp { font-family: courier new, courier, monospace;
+}
+/* 统一等宽字体 */
+._small { font-size: 12px;
+}
+/* 小于 12px 的中文很难阅读, 让 small 正常化 */
+/** 重置列表元素 **/
+._ul, ._ol { list-style: none;
+}
+/** 重置文本格式元素 **/
+._a { text-decoration: none;
+}
+._a:hover { text-decoration: underline;
+}
+._sup { vertical-align: text-top;
+}
+/* 重置, 减少对行高的影响 */
+._sub { vertical-align: text-bottom;
+}
+/** 重置表单元素 **/
+._legend { color: #000;
+}
+/* for ie6 */
+._fieldset, ._img { border: 0;
+}
+/* img 搭车：让链接里的 img 无边框 */
+button, input, ._select, textarea { font-size: 100%;
+}
+/* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+/** 重置表格元素 **/
+._table { border-collapse: collapse; border-spacing: 0;
+}
+/* 重置 HTML5 元素 */
+._article, ._aside, ._details, ._figcaption, ._figure, ._footer, ._header, hgroup, ._menu, ._nav, ._section, ._summary, ._time, ._mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+._mark { background: #ff0;
+}
+/*每个页面公共css */
+/*解决图片因为高度而不能铺满的问题*/
+uni-page-body {
+	height: 100%;
+}
+page {
+	height: 100%;
+}
+
